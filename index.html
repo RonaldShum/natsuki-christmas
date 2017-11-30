@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+<script type="text/javascript" src="snowfall.jquery.min.js"></script>
 <style>
 body, html {
   height: 100%;
@@ -28,7 +28,7 @@ body, html {
   background-size: cover;
 
 }
-/*tutorial overlay*/
+
 
 
 
@@ -41,7 +41,7 @@ body, html {
   color: #000;
 }
 
-.caption span.border {
+.caption span.myBorder {
   background-color: #111;
   color: #fff;
   padding: 18px;
@@ -63,10 +63,7 @@ h3 {
         height: 100%;
         opacity: 0.8;
 }
-/*hide button*/
-#changeBGBtn{
-      visibility: hidden;
-}
+
 #boparea{
       /*background-color: red;*/
       position: relative;
@@ -76,16 +73,6 @@ h3 {
       left:45%;
       cursor: pointer;
 }
-#overlay{
-      background-color: black;
-    
-      position: absolute;
-      width: 20%;
-      opacity: 0.6;
-      padding-bottom: 20%;
-      top:60%;
-      left:45%;
-}
 /* For desktop: */
 @media only screen and (min-width: 768px) {
     .bgimg-1 {
@@ -94,10 +81,7 @@ h3 {
       height: 100%;
       opacity: 0.9;
     }
-    /*show button*/
-    #changeBGBtn{
-      visibility: visible;
-    }
+    
     #boparea{
       /*background-color: red;*/
       position: relative;
@@ -122,12 +106,7 @@ height:auto;
 left: 0;
 top: 0;
 }
-#changeBGBtn{
-  position:absolute;
-  height:auto;
-  left: 0;
-  top: 0;
-}
+
 
 </style>
 
@@ -144,7 +123,7 @@ top: 0;
 <body >
 <div id="natsukiBG" class="bgimg-1">
   <div class="caption">
-    <span class="border">Merry Christmas</span><br>
+    <span class="myBorder" id="christmasText">Bop her nose</span><br>
   </div>
   <div id="boparea" >
   </div>
@@ -154,9 +133,9 @@ top: 0;
 
 
 <img id="image" src="https://i.imgur.com/VgqZzgi.gif"/>
-<button type="button" id="changeBGBtn" class="btn btn-primary">Change Background</button>
+<!--<button type="button" id="changeBGBtn" class="btn btn-primary">Change Background</button>-->
 
-<script type="text/javascript" src="snowfall.jquery.min.js"></script>
+<!--<script type="text/javascript" src="snowfall.jquery.min.js"></script>-->
 
 
 

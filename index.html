@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  /*overflow-y: hidden;*/
+  /*color: #777;*/
+  /*display: block;*/
+}
+
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+/*tutorial overlay*/
+
+
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 4px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+/* For Mobile */
+.bgimg-1 {
+        /*background-image: url("https://i.imgur.com/mG8q5Hh.png");*/
+        transition: background-image 1s ease-in-out;
+        background-image: url("https://cdn.discordapp.com/attachments/374349629019652096/385329094499368960/s.png");  
+        height: 100%;
+        opacity: 0.8;
+}
+/*hide button*/
+#changeBGBtn{
+      visibility: hidden;
+}
+#boparea{
+      /*background-color: red;*/
+      position: relative;
+      width: 20%;
+      padding-bottom: 20%;
+      top:60%;
+      left:45%;
+      cursor: pointer;
+}
+#overlay{
+      background-color: black;
+    
+      position: absolute;
+      width: 20%;
+      opacity: 0.6;
+      padding-bottom: 20%;
+      top:60%;
+      left:45%;
+}
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+    .bgimg-1 {
+      /*background-image: url("https://i.imgur.com/9BZDXGf.png");*/
+      background-image: url("https://cdn.discordapp.com/attachments/374349629019652096/385320910661353472/g1.png");
+      height: 100%;
+      opacity: 0.9;
+    }
+    /*show button*/
+    #changeBGBtn{
+      visibility: visible;
+    }
+    #boparea{
+      /*background-color: red;*/
+      position: relative;
+      width: 10%;
+      padding-bottom: 10%;
+      top:50%;
+      left:75%;
+    }
+    #overlay{
+      position: absolute;
+      width: 10%;
+      padding-bottom: 10%;
+      top:50%;
+      left:75%;
+    }
+}
+
+#image{
+position:absolute;
+width:60px;
+height:auto;
+left: 0;
+top: 0;
+}
+#changeBGBtn{
+  position:absolute;
+  height:auto;
+  left: 0;
+  top: 0;
+}
+
+</style>
+
+<!--snow control-->
+<script type='text/javascript'>     
+        $(document).ready(function(){
+          $(document).snowfall({round : true, minSize: 5, maxSize:8, maxSpeed:2}); // add rounded
+        });
+</script>
+
+
+
+</head>
+<body >
+<div id="natsukiBG" class="bgimg-1">
+  <div class="caption">
+    <span class="border">Merry Christmas</span><br>
+  </div>
+  <div id="boparea" >
+  </div>
+  
+  
+</div>
+
+
+<img id="image" src="https://i.imgur.com/VgqZzgi.gif"/>
+<button type="button" id="changeBGBtn" class="btn btn-primary">Change Background</button>
+
+<script type="text/javascript" src="snowfall.jquery.min.js"></script>
+
+
+
+
+<script src="smolsuki.js"></script>
+</body>
+</html>

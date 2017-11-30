@@ -144,8 +144,6 @@ $( document ).ready(function() {
             }
             image.css({left:nextX, top:nextY});
           });
-
-          
         }
 });
 

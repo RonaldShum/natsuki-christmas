@@ -120,7 +120,8 @@ $( document ).ready(function() {
             if( (nextY + imageHeight + margin) > window.innerHeight + win.scrollTop()){
               nextY = window.innerHeight + win.scrollTop() - imageHeight-margin+fingerDist;
             }
-            image.stop().animate({left:nextX, top:nextY});
+            // image.stop().animate({left:nextX, top:nextY});
+            $('#image,html').stop().animate({left:nextX, top:nextY});
             // image.css({left:nextX, top:nextY});
           });
         }else{

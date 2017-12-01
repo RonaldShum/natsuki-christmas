@@ -5,12 +5,12 @@ var image = null;
 var margin = 25;
 var win = $(window);
 // destop BG images
-var destop1 = "url('https://i.imgur.com/vuRYhna.png')";
-var destop2 = "url('https://i.imgur.com/TsqwWvW.png')";
+var destop1 = "url('background/destop/d1.png')";
+var destop2 = "url('background/destop/d2.png')";
 var destopBGs = [destop1,destop2];
 // mobile BG imgaes
-var mobile1 = "url('https://i.imgur.com/4PsEXY6.png')";
-var mobile2 = "url('https://i.imgur.com/qOn4S7b.png')";
+var mobile1 = "url('background/mobile/s1.png')";
+var mobile2 = "url('background/mobile/s2.png')";
 var mobileBGs = [mobile1,mobile2];
 var BGindex = 0;
 var fingerDist = 5;

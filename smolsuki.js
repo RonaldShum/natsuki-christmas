@@ -117,8 +117,8 @@ $( document ).ready(function() {
             if( (nextX + imageWidth + margin) > window.innerWidth){
               nextX = window.innerWidth - imageWidth-margin+fingerDist;
             }
-            if( (nextY + imageHeight + margin) > window.innerHeight + win.scrollTop()){
-              nextY = window.innerHeight + win.scrollTop() - imageHeight-margin+fingerDist;
+            if( (nextY + imageHeight + margin) > window.innerHeight ){
+              nextY = window.innerHeight - imageHeight-margin+fingerDist;
             }
             // image.stop().animate({left:nextX, top:nextY});
             $('#image,html').stop().animate({left:nextX, top:nextY});
@@ -140,8 +140,8 @@ $( document ).ready(function() {
             if( (nextX + imageWidth + margin) > window.innerWidth){
               nextX = window.innerWidth - imageWidth-margin+fingerDist;
             }
-            if( (nextY + imageHeight + margin) > window.innerHeight + win.scrollTop()){
-              nextY = window.innerHeight + win.scrollTop() - imageHeight-margin+fingerDist;
+            if( (nextY + imageHeight + margin) > window.innerHeight){
+              nextY = window.innerHeight - imageHeight-margin+fingerDist;
             }
             image.css({left:nextX, top:nextY});
           });
